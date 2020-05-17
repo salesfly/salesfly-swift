@@ -1,0 +1,10 @@
+os: osx
+osx_image: xcode10.0
+branches:
+  only:
+    - master
+
+script:
+  swift -version
+  swift build
+#  swift test
