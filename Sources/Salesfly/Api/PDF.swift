@@ -13,27 +13,7 @@ public struct PDF {
         ]        
         let restClient = try SalesflyClient.getRestClient()
 
-//        let payload = jsonToData(json: options)
-
-        let payload = try? JSONSerialization.data(withJSONObject: options.asDictionary)
-
-
-        let data = try restClient.post(path: "/v1/pdf/create", payload: payload, headers: headers)
+        let data = try restClient.post(path: "/v1/pdf/create", payload: options.toData(), headers: headers)
         return data
-        //let resp = try JSONDecoder().decode(Response<APIUsage>.self, from: data!)
-        //return resp.data
     }
-
-
-  /*  public static func jsonToData(json: AnyObject) -> Data? { 
-        do {
-            return try JSONSerialization.data(withJSONObject: json, options: JSONSerialization.WritingOptions.prettyPrinted) as Data
-        } catch let myJSONError {
-            print(myJSONError)
-        }
-        return nil;
-    }
-
-*/
-
 }
