@@ -2,11 +2,11 @@
 
 [![Build Status](https://travis-ci.org/salesfly/salesfly-swift.svg?branch=master)](https://travis-ci.org/salesfly/salesfly-swift)
 
-Swift client for [Salesfly API](https://salesfly.com)&reg;
+Swift client for [Salesfly API](https://salesfly.com)&reg;. This client works with [Salesfly e-commerce](https://salesfly.com) and [SalesflyPDF](https://salesflypdf.com).
 
 ## Documentation
 
-See the [Swift API docs](https://docs.salesfly.com/swift/).
+See the [Swift API docs](https://developers.salesfly.com/swift/).
 
 ## Installation
 
